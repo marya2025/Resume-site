@@ -2,41 +2,46 @@
 <html lang="fa">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>رزومه من</title>
-    <link rel="stylesheet" href="style.css">
-        body { font-family: Arial, sans-serif; direction: rtl; text-align: center; }
-        .profile-img { width: 150px; border-radius: 50%; margin: 20px; }
-        .section { padding: 40px 0; }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- لینک صحیح به فایل CSS -->
 </head>
 <body>
 
-    <div class="container">
+    <header>
+        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
         <h1>نام شما</h1>
-        <img src="82593a18-7d10-4333-a976-b2b51c6624f7.png" alt="عکس پروفایل" class="profile-img">
-        <p>متخصص طراحی وب | برنامه‌نویس فرانت‌اند</p>
+        <p>تخصص شما | موقعیت شغلی</p>
+    </header>
 
-        <div class="section">
-            <h2>درباره من</h2>
-            <p>من یک توسعه‌دهنده وب با تجربه در HTML، CSS، JavaScript و فریمورک‌های مدرن هستم.</p>
-        </div>
+    <section class="about">
+        <h2>درباره من</h2>
+        <p>من یک توسعه‌دهنده وب با تجربه در طراحی سایت‌های واکنش‌گرا و کاربرپسند هستم.</p>
+    </section>
 
-        <div class="section">
-            <h2>نمونه کارها</h2>
-            <div class="row">
-                <div class="col-md-4"><img src="work1.jpg" class="img-fluid"></div>
-                <div class="col-md-4"><img src="work2.jpg" class="img-fluid"></div>
-                <div class="col-md-4"><img src="work3.jpg" class="img-fluid"></div>
-            </div>
+    <section class="skills">
+        <h2>مهارت‌ها</h2>
+        <div class="skill-list">
+            <div class="skill"><img src="html.png" alt="HTML"> HTML</div>
+            <div class="skill"><img src="css.png" alt="CSS"> CSS</div>
+            <div class="skill"><img src="js.png" alt="JavaScript"> JavaScript</div>
         </div>
+    </section>
 
-        <div class="section">
-            <h2>تماس با من</h2>
-            <p>📞 09123456789 | 📧 email@example.com</p>
-            <p>📍 تهران، ایران</p>
+    <section class="portfolio">
+        <h2>نمونه کارها</h2>
+        <div class="projects">
+            <img src="project1.jpg" alt="پروژه ۱">
+            <img src="project2.jpg" alt="پروژه ۲">
+            <img src="project3.jpg" alt="پروژه ۳">
         </div>
-    </div>
+    </section>
+
+    <section class="contact">
+        <h2>تماس با من</h2>
+        <p>اگر علاقه‌مند به همکاری هستید، با من تماس بگیرید.</p>
+        <a href="mailto:your@email.com" class="btn">ایمیل بزنید</a>
+    </section>
 
 </body>
 </html>
