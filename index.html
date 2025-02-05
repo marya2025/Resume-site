@@ -4,42 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>رزومه من</title>
-    <link rel="stylesheet" href="style.css"> <!-- لینک صحیح به فایل CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- لینک به فایل CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> <!-- فونت مدرن -->
 </head>
 <body>
 
+    <!-- هدر -->
     <header>
-        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-        <h1>نام شما</h1>
-        <p>تخصص شما | موقعیت شغلی</p>
+        <div class="container">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            <div class="header-text">
+                <h1>نام شما</h1>
+                <p>توسعه‌دهنده وب | طراح UI/UX</p>
+                <a href="#contact" class="btn">تماس با من</a>
+            </div>
+        </div>
     </header>
 
+    <!-- درباره من -->
     <section class="about">
         <h2>درباره من</h2>
-        <p>من یک توسعه‌دهنده وب با تجربه در طراحی سایت‌های واکنش‌گرا و کاربرپسند هستم.</p>
+        <p>من یک توسعه‌دهنده وب با تجربه در طراحی سایت‌های واکنش‌گرا و کاربرپسند هستم. عاشق ایجاد تجربه‌های منحصر به فرد و جذاب برای کاربران هستم.</p>
     </section>
 
+    <!-- مهارت‌ها -->
     <section class="skills">
         <h2>مهارت‌ها</h2>
         <div class="skill-list">
-            <div class="skill"><img src="html.png" alt="HTML"> HTML</div>
-            <div class="skill"><img src="css.png" alt="CSS"> CSS</div>
-            <div class="skill"><img src="js.png" alt="JavaScript"> JavaScript</div>
+            <div class="skill">
+                <img src="html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <img src="css.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <img src="js.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
         </div>
     </section>
 
+    <!-- نمونه‌کارها -->
     <section class="portfolio">
         <h2>نمونه کارها</h2>
         <div class="projects">
-            <img src="project1.jpg" alt="پروژه ۱">
-            <img src="project2.jpg" alt="پروژه ۲">
-            <img src="project3.jpg" alt="پروژه ۳">
+            <div class="project">
+                <img src="project1.jpg" alt="پروژه ۱">
+                <div class="overlay">
+                    <h3>پروژه ۱</h3>
+                    <p>توضیح کوتاه از پروژه</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="پروژه ۲">
+                <div class="overlay">
+                    <h3>پروژه ۲</h3>
+                    <p>توضیح کوتاه از پروژه</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="پروژه ۳">
+                <div class="overlay">
+                    <h3>پروژه ۳</h3>
+                    <p>توضیح کوتاه از پروژه</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="contact">
+    <!-- تماس با من -->
+    <section class="contact" id="contact">
         <h2>تماس با من</h2>
-        <p>اگر علاقه‌مند به همکاری هستید، با من تماس بگیرید.</p>
+        <p>برای پروژه‌ها یا همکاری‌های جدید، با من تماس بگیرید!</p>
         <a href="mailto:your@email.com" class="btn">ایمیل بزنید</a>
     </section>
 
